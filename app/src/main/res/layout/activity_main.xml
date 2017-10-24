@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uy.mysharedpreferences.MainActivity">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textSize="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp">
+    </TextView>
+
+    <EditText
+        android:textSize="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_name"
+        android:layout_alignBaseline="@id/username"
+        android:layout_above="@+id/password"
+        android:layout_toRightOf="@+id/password"
+        android:layout_toEndOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/username"
+        android:paddingTop="20dp">
+
+    </TextView>
+
+    <EditText
+        android:textSize="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/password"
+        android:layout_toRightOf="@id/password"
+        android:id="@+id/input_pass"
+        android:inputType="textPassword"/>
+
+    />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:text="Save Info"
+        android:onClick="saveInfo"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_save"
+        android:layout_alignBottom="@+id/btn_save"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/btn_save"
+        android:layout_toRightOf="@+id/btn_save"
+        android:onClick="loadInfo"
+        android:text="Display Info" />
+
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="display info here"
+        android:layout_below="@id/btn_save"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_display"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_save"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_display"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>
+
+
